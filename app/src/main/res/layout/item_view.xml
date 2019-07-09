@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" app:srcCompat="@drawable/baseline_account_circle_black_24"
+            android:id="@+id/imageViewBitcoin" android:layout_marginTop="16dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBitcoin"
+            app:layout_constraintStart_toEndOf="@+id/imageViewBitcoin"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="@+id/textView1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBitcoin"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBitcoin" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBitcoin"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimary">
+
+    </View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
